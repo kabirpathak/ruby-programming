@@ -1,0 +1,26 @@
+#/Users/kabirpathak/.rvm/rubies/ruby-2.6.6/bin/ruby
+
+secret_word = "giraffe"
+
+guess = ""
+guess_count = 0
+guess_limit = 3
+out_of_guesses = false
+
+while !out_of_guesses and guess != secret_word
+
+  if(guess_count < guess_limit)
+    puts "Enter guess: "
+    guess = gets.chomp()
+    guess_count += 1
+  else
+    out_of_guesses = true
+
+  end
+end
+
+if out_of_guesses
+  puts "You lose"
+else
+  puts "You won"
+end
