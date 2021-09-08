@@ -12,6 +12,7 @@ Learning the ruby programming language!
   <li>
     <div>Followed the rails guide and completed the blog app.</div>
     <div>Project Link : (https://github.com/kabirpathak/ruby-programming/tree/master/blog)</div>
+  </br>
   </li>
   <li>
     <div> Halfway through the full rails course by FreeCodeCamp.org on Youtube.</div>
