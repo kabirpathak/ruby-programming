@@ -1,0 +1,9 @@
+<% unless comment.archived? %>
+  <div>
+    <%= comment.commenter %>: <%= comment.body %>
+    <%= link_to 'Delete', [comment.article, comment],
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
+  </div>
+<% end %>
+<hr>

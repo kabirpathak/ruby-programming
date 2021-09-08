@@ -1,0 +1,5 @@
+// app/views/articles/new.js.erb
+
+// Locate the placeholder in the DOM
+// Insert the partial as the content of the placeholder div
+document.getElementById("new-article-placeholder").innerHTML = "<%= escape_javascript(render partial: 'new' ) %>"

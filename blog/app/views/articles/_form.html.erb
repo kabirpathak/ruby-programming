@@ -1,0 +1,38 @@
+
+
+<%= form_with model: article, local: true do |form| %>
+    <div class="form-group mt-2">
+      <div><% form.label :title %></div>
+      <div><%= form.text_field :title, class: "form-control", placeholder: "Article Title" %></div>
+      <div>
+        <% article.errors.full_messages_for(:title).each do |message| %>
+          <div><%= message %></div>
+        <% end %>
+      </div>
+    </div>
+    
+    <div class = "form-group mt-2">
+      <div><% form.label :body %></div>
+      <div><%= form.text_area :body, class: "form-control", placeholder: "Article Text" %></div>
+      <div>
+        <% article.errors.full_messages_for(:body).each do |message| %>
+          <div><%= message %></div>
+        <% end %>
+      </div>
+    </div>
+
+      <%= form.label :status %><br>
+      <%= form.select :status, ['public', 'private', 'archived'], selected: 'public', class: "form-select" %>
+  
+
+      <div align="right" class = "btn">
+      <%= form.submit %>
+
+    </div>
+    
+  <% end %>
+
+</div>
+
+
+
